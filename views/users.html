@@ -10,5 +10,18 @@
   <body>
     <h2>Users Page</h2>
     <p>A List of Users</p>
+    <main>
+      <form action="/users" method="POST">
+        <div>
+          <label for="user">New User</label>
+          <input type="text" name="user" id="user" />
+        </div>
+        <div>
+          <label for="age">New User Age</label>
+          <input type="text" name="num" id="age" />
+        </div>
+        <button type="submit">Submit</button>
+      </form>
+    </main>
   </body>
 </html>

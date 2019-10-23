@@ -4,7 +4,7 @@ const express = require('express');
 
 const router = express.Router();
 
-router.use('/', (req, res, next) => {
+router.get('/', (req, res, next) => {
   console.log('inside middleware HOME');
   res.sendFile(path.join(__dirname, '..', 'views', 'home.html'));
 });

@@ -12,9 +12,9 @@ router.get('/users', (req, res, next) => {
 router.post('/users', (req, res, next) => {
   // console.log('In the users middleware!');
   //console.log('req.body......  ', req.body);
-  console.log(
-    `My name is ${req.body.user} and I am ${req.body.age} years old.`
-  );
+  const age = req.body.age;
+  const name = req.body.name;
+  console.log(`My name is ${name} and I am ${age} years old.`);
   res.redirect('/');
 });
 
